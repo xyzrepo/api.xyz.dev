@@ -1,0 +1,22 @@
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-mongoose",
+      "settings": {
+        "host": "xyz-db-cluster-tddwc.azure.mongodb.net/test?retryWrites=true",
+        "port": 27017,
+        "srv": "false",
+        "database": "strapi",
+        "username": "xyzdb",
+        "password": "qFOlDM1QhnaWhU4b",
+        "ssl": "false",
+        "client": "mongo"
+      },
+      "options": {
+        "ssl": true,
+        "authenticationDatabase": ""
+      }
+    }
+  }
+}
