@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/agreements",
+      "handler": "Agreement.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/agreements/count",
+      "handler": "Agreement.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/agreements/:id",
+      "handler": "Agreement.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/agreements",
+      "handler": "Agreement.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/agreements/:id",
+      "handler": "Agreement.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/agreements/:id",
+      "handler": "Agreement.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
