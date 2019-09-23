@@ -1,0 +1,16 @@
+{
+  "info": {
+    "name": "Term",
+    "description": ""
+  },
+  "connection": "default",
+  "collectionName": "groups_terms",
+  "attributes": {
+    "Description": {
+      "type": "string"
+    },
+    "Amount": {
+      "type": "decimal"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "connection": "default",
+  "collectionName": "agreement",
+  "info": {
+    "name": "agreement",
+    "description": ""
+  },
+  "options": {
+    "timestamps": [
+      "createdAt",
+      "updatedAt"
+    ]
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Total": {
+      "type": "decimal"
+    },
+    "Terms": {
+      "group": "term",
+      "repeatable": true,
+      "type": "group"
+    },
+    "Members": {
+      "collection": "user",
+      "via": "agreements",
+      "dominant": true,
+      "plugin": "users-permissions"
+    }
+  }
+}
