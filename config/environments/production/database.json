@@ -4,19 +4,19 @@
     "default": {
       "connector": "strapi-hook-mongoose",
       "settings": {
-        "database": "strapi",
-        "host": "xyz-db-cluster-tddwc.azure.mongodb.net/test?retryWrites=true",
-        "srv": true,
-        "port": 27017,
-        "username": "xyzdb",
-        "password": "qFOlDM1QhnaWhU4b",
-        "enabled": true,
+        "database": "${process.env.DATABASE_NAME || 'strapi'}",
+        "host": "${process.env.DATABASE_HOST || '127.0.0.1'}",
+        "srv": "${process.env.DATABASE_SRV || false}",
+        "port": "${process.env.DATABASE_PORT || '27017'}",
+        "username": "${process.env.DATABASE_USERNAME || ''}",
+        "password": "${process.env.DATABASE_PASSWORD || ''}",
+        "enabled": "${process.env.DATABASE_ENABLED || true}",
         "client": "mongo"
       },
       "options": {
-        "authenticationDatabase": "",
-        "ssl": true,
-        "enabled": true
+        "authenticationDatabase": "${process.env.DATABASE_AUTHENTICATION_DATABASE || ''}",
+        "ssl": "${process.env.DATABASE_SSL || false}",
+        "enabled": "${process.env.DATABASE_ENABLED || true}",
       }
     }
   }
