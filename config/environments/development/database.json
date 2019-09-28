@@ -16,7 +16,7 @@
       "options": {
         "authenticationDatabase": "${process.env.DATABASE_AUTHENTICATION_DATABASE || ''}",
         "ssl": "${process.env.DATABASE_SSL || false}",
-        "enabled": "${process.env.DATABASE_ENABLED || true}",
+        "enabled": "${process.env.DATABASE_ENABLED || true}"
       }
     }
   }
